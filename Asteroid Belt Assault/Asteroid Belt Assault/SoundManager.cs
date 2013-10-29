@@ -18,6 +18,7 @@ namespace Asteroid_Belt_Assault
 
         private static SoundEffect playerShot;
         private static SoundEffect enemyShot;
+        private static SoundEffect Portal;
 
         private static Random rand = new Random();
 
@@ -27,7 +28,7 @@ namespace Asteroid_Belt_Assault
             {
                 playerShot = content.Load<SoundEffect>(@"Sounds\Shot1");
                 enemyShot = content.Load<SoundEffect>(@"Sounds\Shot2");
-
+                Portal = content.Load<SoundEffect>(@"sounds\game over");
                 for (int x = 1; x <= explosionCount; x++)
                 {
                     explosions.Add(
@@ -77,5 +78,16 @@ namespace Asteroid_Belt_Assault
             }
         }
 
+        public static void playPortal()
+        {
+            try
+            {
+                Portal.Play();
+            }
+            catch
+            {
+                Debug.Write("playPortal Failed");
+            }
+        }
     }
 }
