@@ -39,7 +39,7 @@ namespace Asteroid_Belt_Assault
         private void setUpWaypoints()
         {
             List<Vector2> path0 = new List<Vector2>();
-            path0.Add(new Vector2(850, 300));
+            path0.Add(new Vector2(-850, 400));
             path0.Add(new Vector2(-100, 300));
             pathWaypoints.Add(path0);
             waveSpawns[0] = 0;
@@ -51,15 +51,15 @@ namespace Asteroid_Belt_Assault
             waveSpawns[1] = 0;
 
             List<Vector2> path2 = new List<Vector2>();
-            path2.Add(new Vector2(-100, 50));
-            path2.Add(new Vector2(150, 50));
-            path2.Add(new Vector2(200, 75));
+            path2.Add(new Vector2(-300, 80));
+            path2.Add(new Vector2(250, 30));
+            path2.Add(new Vector2(100, 175));
             path2.Add(new Vector2(200, 125));
-            path2.Add(new Vector2(150, 150));
-            path2.Add(new Vector2(150, 175));
-            path2.Add(new Vector2(200, 200));
-            path2.Add(new Vector2(600, 200));
-            path2.Add(new Vector2(850, 600));
+            path2.Add(new Vector2(350, 150));
+            path2.Add(new Vector2(450, 75));
+            path2.Add(new Vector2(500, 20));
+            path2.Add(new Vector2(300, 250));
+            path2.Add(new Vector2(950, 690));
             pathWaypoints.Add(path2);
             waveSpawns[2] = 0;
 
