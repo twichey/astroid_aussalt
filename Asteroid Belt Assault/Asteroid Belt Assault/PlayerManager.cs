@@ -15,12 +15,12 @@ namespace Asteroid_Belt_Assault
         private Rectangle playerAreaLimit;
 
         public long PlayerScore = 0;
-        public int LivesRemaining = 3;
+        public int LivesRemaining = 4;
         public bool Destroyed = false;
 
         private Vector2 gunOffset = new Vector2(25, 10);
-        private float shotTimer = 0.0f;
-        private float minShotTimer = 2.0f;
+        private float shotTimer = 1.0f;
+        private float minShotTimer = 1.0f;
         private int playerRadius = 15;
         public ShotManager PlayerShotManager;
 
