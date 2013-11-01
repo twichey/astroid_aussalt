@@ -72,7 +72,7 @@ namespace Asteroid_Belt_Assault
 
         public void Update(GameTime gameTime)
         {
-            for (int x = Shots.Count - 1; x >= 0; x--)
+            for (int x = Shots.Count - 2; x >= 2; x--)
             {
                 Shots[x].Update(gameTime);
                 if (!screenBounds.Intersects(Shots[x].Destination))
