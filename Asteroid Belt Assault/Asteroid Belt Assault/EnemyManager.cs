@@ -39,14 +39,14 @@ namespace Asteroid_Belt_Assault
         private void setUpWaypoints()
         {
             List<Vector2> path0 = new List<Vector2>();
-            path0.Add(new Vector2(-850, 400));
-            path0.Add(new Vector2(-100, 300));
+            path0.Add(new Vector2( 850, 600));
+            path0.Add(new Vector2( 400, 800));
             pathWaypoints.Add(path0);
             waveSpawns[0] = 0;
 
             List<Vector2> path1 = new List<Vector2>();
-            path1.Add(new Vector2(-50, 225));
-            path1.Add(new Vector2(850, 225));
+            path1.Add(new Vector2( 50, -225));
+            path1.Add(new Vector2(-850, 225));
             pathWaypoints.Add(path1);
             waveSpawns[1] = 0;
 
@@ -124,7 +124,7 @@ namespace Asteroid_Belt_Assault
             shipSpawnTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
             if (shipSpawnTimer > shipSpawnWaitTime)
             {
-                for (int x = waveSpawns.Count - 1; x >= 0; x--)
+                for (int x = waveSpawns.Count - 1; x >= 6; x--)
                 {
                     if (waveSpawns[x] > 0)
                     {
