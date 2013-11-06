@@ -22,7 +22,7 @@ namespace Asteroid_Belt_Assault
         public int MaxShipsPerWave = 20;
         private float nextWaveTimer = 0.0f;
         private float nextWaveMinTimer = 8.0f;
-        private float shipSpawnTimer = 0.0f;
+        private float shipSpawnTimer = 0.5f;
         private float shipSpawnWaitTime = 0.5f;
 
         private float shipShotChance = 0.2f;
