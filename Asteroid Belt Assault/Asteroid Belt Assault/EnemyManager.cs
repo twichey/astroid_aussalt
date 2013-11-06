@@ -32,7 +32,7 @@ namespace Asteroid_Belt_Assault
 
         private Dictionary<int, int> waveSpawns = new Dictionary<int, int>();
 
-        public bool Active = false;
+        public bool Active = true;
 
         private Random rand = new Random();
 
